@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>GAME SURVIVAL BY RESTU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>🌴 GAME SURVIVAL BY RESTU</h1>
+    <div id="status-bar">
+      <p>❤️ Health: <span id="health">100</span></p>
+      <p>🍗 Hunger: <span id="hunger">100</span></p>
+      <p>💧 Thirst: <span id="thirst">100</span></p>
+      <p>⚡ Stamina: <span id="stamina">100</span></p>
+      <p>🌞 Cuaca: <span id="weather">Cerah</span></p>
+      <p>⏰ Hari: <span id="day">1</span></p>
+    </div>
+
+    <div id="game-screen">
+      <p id="game-log">Selamat datang di 🌴 GAME SURVIVAL BY RESTU!</p>
+    </div>
+
+    <div id="controls">
+      <button onclick="explore()">🔍 Jelajah</button>
+      <button onclick="eat()">🍖 Makan</button>
+      <button onclick="drink()">🥤 Minum</button>
+      <button onclick="rest()">🛏️ Istirahat</button>
+      <button onclick="craft()">⚒️ Craft</button>
+    </div>
+
+    <!-- Cheat input -->
+    <div id="cheat-menu" class="hidden">
+      <h3>Cheat Mode</h3>
+      <button onclick="cheat_addResources()">Tambah Resource</button>
+      <button onclick="cheat_godMode()">God Mode</button>
+      <button onclick="cheat_spawnNPC()">Spawn NPC</button>
+      <button onclick="cheat_skipDay()">Skip Hari</button>
+    </div>
+
+    <div id="dev-access">
+      <input type="password" id="cheat-code" placeholder="Masukkan kode dev">
+      <button onclick="unlockCheat()">Unlock</button>
+    </div>
+
+    <footer>
+      <p>Made by Restu © 2025</p>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
